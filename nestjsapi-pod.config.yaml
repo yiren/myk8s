@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nestjs-pod
+  labels:
+    component: api
+spec:
+  containers:
+    - name: nestjsapi
+      image: yirengoo/nestjsapi
+      ports:
+        - containerPort: 3000    
